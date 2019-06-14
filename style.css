@@ -190,7 +190,7 @@ footer a {
 #portfolio {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 450px;
     background-color: #EFEBE7;
 }
 
@@ -209,10 +209,10 @@ footer a {
 
 .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 200px;
     margin-bottom: 20px;
-    width: 20vw;
-    height: 20vw;
+    max-width: 20vw;
+    height: 40vw;
     margin-left: 20px;
     position: relative;
 }
@@ -224,31 +224,43 @@ footer a {
 }
 
 .col:nth-child(2) {
-    background-image: url(billeder/stilart.png);
+    background-image: url(billeder/dokumentation.png);
     background-size: cover;
-    background-position: 70% 0;
+    background-position: 50% 0;
 }
 
 .col:nth-child(3) {
-    background-image: url(billeder/stilart.png);
+    background-image: url(billeder/spil1.png);
     background-size: cover;
-    background-position: 70% 0;
+    background-position: 50% 0;
 }
 
 .col:nth-child(4) {
-    background-image: url(billeder/stilart.png);
+    background-image: url(billeder/spil3.png);
     background-size: cover;
-    background-position: 70%0;
+    background-position: 55% 0;
 }
 
 .col:nth-child(5) {
-    background-image: url(billeder/stilart.png);
+    background-image: url(billeder/kgb.png);
     background-size: cover;
-    background-position: 70%0;
+    background-position: 50%0;
 }
 
 .col:nth-child(6) {
-    background-image: url(billeder/stilart.png);
+    background-image: url(billeder/fronter.png);
+    background-size: cover;
+    background-position: 50%0;
+}
+
+.col:nth-child(7) {
+    background-image: url(billeder/keaweb.png);
+    background-size: cover;
+    background-position: 50%0;
+}
+
+.col:nth-child(8) {
+    background-image: url(billeder/kealife.png);
     background-size: cover;
     background-position: 70%0;
 }
@@ -262,74 +274,151 @@ footer a {
     text-decoration: none;
     color: white;
     background-color: #3A414A;
-    padding: 10px 20px 10px 20px;
-    font-size: 1.3rem;
+    padding: 10px 10px 10px 10px;
+    font-size: 0.8rem;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5rem;
+    line-height: 1rem;
 }
 
 .col a:hover {
     transform: scale(1.08);
 }
 
+/**** OM MIG CSS ****/
+
+#mig {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#mig .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+
+
+#mig .txt {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 50px;
+}
+
+
+#mig .image {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+
 /** TABLET MEDIA QUERY **/
-@media only screen and (min-width: 750px) {
-
-    header {
-        /*        position: absolute;*/
-        flex-direction: column;
-        height: 155px;
+@media only screen and (min-width: 640px) {
+    #portfolio {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        background-color: #EFEBE7;
     }
 
-    header li {
-        width: 100vw;
-        background-color: transparent;
-        margin: 10px;
+    #portfolio .sectionwrapper {
+        /* parent flex */
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        justify-content: space-between;
     }
 
-    header li a {
-        /*        position: relative;*/
-        padding: 0;
-        font-size: 1.3rem;
-        background-color: transparent;
-    }
-
-    header img {
-        /*        position: relative;*/
-        width: 550px;
-        margin: 5px 5px 10px;
-    }
-
-
-    #menuknap {
-        display: none;
-    }
-
-    #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    #menu li {
-        display: inline;
-        background-color: transparent;
-    }
-
-    #menu {
-        top: -10px;
+    .col {
+        flex-grow: 1;
+        flex-basis: 300px;
+        margin-bottom: 20px;
+        width: 20vw;
+        height: 20vw;
+        margin-left: 20px;
         position: relative;
     }
 
+    .col a {
+        transition: all 0.5s ease;
+        position: absolute;
+        bottom: 1vw;
+        right: 1vw;
+        text-decoration: none;
+        color: white;
+        background-color: #3A414A;
+        padding: 10px 20px 10px 20px;
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5rem;
+    }
 
-    /** DESKTOP MEDIA QUERY **/
-    @media only screen and (min-width: 885px) {
+    .col a:hover {
+        transform: scale(1.08);
+    }
+
+    @media only screen and (min-width: 750px) {
+
+        header {
+            /*        position: absolute;*/
+            flex-direction: column;
+            height: 155px;
+        }
+
+        header li {
+            width: 100vw;
+            background-color: transparent;
+            margin: 10px;
+        }
+
         header li a {
+            /*        position: relative;*/
             padding: 0;
-            margin: 0 20px;
             font-size: 1.3rem;
+            background-color: transparent;
+        }
+
+        header img {
+            /*        position: relative;*/
+            width: 550px;
+            margin: 5px 5px 10px;
         }
 
 
-        /*PROBLEMER:
+        #menuknap {
+            display: none;
+        }
+
+        #menu.hidden {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        #menu li {
+            display: inline;
+            background-color: transparent;
+        }
+
+        #menu {
+            top: -10px;
+            position: relative;
+        }
+
+
+        /** DESKTOP MEDIA QUERY **/
+        @media only screen and (min-width: 885px) {
+            header li a {
+                padding: 0;
+                margin: 0 20px;
+                font-size: 1.3rem;
+            }
+
+
+            /*PROBLEMER:
         Opacity på splashbilledet
         Logo og menu skal stå i midten ved 750px*/
