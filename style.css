@@ -210,11 +210,27 @@ footer a {
 .col {
     flex-grow: 1;
     flex-basis: 200px;
-    margin-bottom: 20px;
-    width: 20vw;
+    margin-bottom: 90px;
+    width: 30vw;
     height: 40vw;
     margin-left: 20px;
     position: relative;
+
+}
+
+.caption {
+    position: absolute;
+    top: 3vw;
+}
+
+#portfolio h4 {
+    bottom: vw;
+    color: black;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    font-style: italic;
 }
 
 .col:nth-child(1) {
@@ -224,33 +240,33 @@ footer a {
 }
 
 .col:nth-child(2) {
-    background-image: url(billeder/dokumentation.png);
-    background-size: cover;
-    background-position: 50% 0;
-}
-
-.col:nth-child(3) {
-    background-image: url(billeder/spil1.png);
-    background-size: cover;
-    background-position: 50% 0;
-}
-
-.col:nth-child(4) {
-    background-image: url(billeder/spil3.png);
-    background-size: cover;
-    background-position: 55% 0;
-}
-
-.col:nth-child(5) {
     background-image: url(billeder/klip.png);
     background-size: cover;
     background-position: 50%0;
 }
 
-.col:nth-child(6) {
+.col:nth-child(3) {
     background-image: url(billeder/kgb.png);
     background-size: cover;
     background-position: 50%0;
+}
+
+.col:nth-child(4) {
+    background-image: url(billeder/dokumentation.png);
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.col:nth-child(5) {
+    background-image: url(billeder/spil1.png);
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.col:nth-child(6) {
+    background-image: url(billeder/spil3.png);
+    background-size: cover;
+    background-position: 55% 0;
 }
 
 .col:nth-child(7) {
@@ -343,7 +359,7 @@ footer a {
     .col {
         flex-grow: 1;
         flex-basis: 300px;
-        margin-bottom: 20px;
+        margin-bottom: 80px;
         width: 20vw;
         height: 20vw;
         margin-left: 20px;
@@ -359,7 +375,7 @@ footer a {
         color: white;
         background-color: #3A414A;
         padding: 10px 20px 10px 20px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         line-height: 1.5rem;
     }
@@ -368,63 +384,81 @@ footer a {
         transform: scale(1.08);
     }
 
-    @media only screen and (min-width: 750px) {
+    .caption {
+        position: absolute;
+        top: 18.5vw;
+    }
 
-        header {
-            /*        position: absolute;*/
-            flex-direction: column;
-            height: 155px;
-        }
+    #portfolio h4 {
+        bottom: vw;
+        color: black;
+        background-color: transparent;
+        font-size: 0.8rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        font-style: italic;
+    }
+}
 
-        header li {
-            width: 100vw;
-            background-color: transparent;
-            margin: 10px;
-        }
+@media only screen and (min-width: 750px) {
 
-        header li a {
-            /*        position: relative;*/
-            padding: 0;
-            font-size: 1.3rem;
-            background-color: transparent;
-        }
+    header {
+        /*        position: absolute;*/
+        flex-direction: column;
+        height: 250px;
+    }
 
-        header img {
-            /*        position: relative;*/
-            width: 550px;
-            margin: 5px 5px 10px;
-        }
+    header li {
+        width: 100vw;
+        background-color: transparent;
+        margin: 10px;
+    }
 
+    header li a {
+        /*        position: relative;*/
+        padding: 0;
+        font-size: 1.3rem;
+        background-color: transparent;
+    }
 
-        #menuknap {
-            display: none;
-        }
-
-        #menu.hidden {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        #menu li {
-            display: inline;
-            background-color: transparent;
-        }
-
-        #menu {
-            top: -10px;
-            position: relative;
-        }
+    header img {
+        /*        position: relative;*/
+        width: 100vw;
+        height: 30vh;
+        margin: 5px 5px 10px;
+    }
 
 
-        /** DESKTOP MEDIA QUERY **/
-        @media only screen and (min-width: 885px) {
-            header li a {
-                padding: 0;
-                margin: 0 20px;
-                font-size: 1.3rem;
-            }
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline;
+        background-color: transparent;
+    }
+
+    #menu {
+        top: -120px;
+        position: relative;
+    }
+}
+
+/** DESKTOP MEDIA QUERY **/
+@media only screen and (min-width: 885px) {
+    header li a {
+        padding: 0;
+        margin: 0 20px;
+        font-size: 1.3rem;
+    }
+}
 
 
-            /*PROBLEMER:
+/*PROBLEMER:
         Opacity på splashbilledet
         Logo og menu skal stå i midten ved 750px*/
