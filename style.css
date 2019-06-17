@@ -74,14 +74,13 @@ header img {
 
 header li {
     width: 100vw;
-    background-color: floralwhite;
+    background-color: #3A414A;
     text-align: center;
-    margin: 5px 0px;
 }
 
 header li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 2.4;
@@ -89,13 +88,11 @@ header li a {
 }
 
 header li a:hover {
-    color: #3A414A;
-    font-size: 1.4rem;
+    color: #CEBBAD;
 }
 
 .selected {
-    color: #3A414A;
-    font-size: 1.4rem;
+    color: #CEBBAD;
 }
 
 #splash {
@@ -350,11 +347,20 @@ footer a {
 }
 
 #stilartside h2 {
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4rem;
     margin: 0px 0px 5px;
     font-weight: bold;
+}
+
+#stilartside h4 {
+    color: black;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 5px;
+    font-style: italic;
 }
 
 #stilartside a {
@@ -376,18 +382,90 @@ footer a {
     justify-content: space-between;
 }
 
-
 #stilartside .om {
     /* child flex */
     flex-grow: 1;
-    flex-basis: 400px;
+    flex-basis: 500px;
     padding: 20px;
 }
 
 
 #stilartside .billede1 {
-    flex-grow: 2;
-    flex-basis: 400px;
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#stilartside .billede2 {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+
+#stilartside .billede3 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+
+/**** KLIPPEOPGAVE CSS ****/
+
+#klippeopgave {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#klippeopgave h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#klippeopgave h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    margin: 0px 0px 5px;
+    font-weight: bold;
+}
+
+#klippeopgave h4 {
+    color: black;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 5px;
+    font-style: italic;
+}
+
+#klippeopgave a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#klippeopgave .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#klippeopgave .om {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#klippeopgave .video {
+    flex-grow: 1;
+    flex-basis: 500px;
     padding: 20px;
 }
 
@@ -474,11 +552,21 @@ footer a {
         padding: 0;
         font-size: 1.3rem;
         background-color: transparent;
+        color: black;
+    }
+
+    header li a:hover {
+        color: #3A414A;
+        font-size: 1.4rem;
+    }
+
+    .selected {
+        color: #3A414A;
+        font-size: 1.4rem;
     }
 
     header img {
-        /*        position: relative;*/
-        width: 900px;
+        width: 700px;
         height: 30vh;
         margin: 5px 5px 10px;
     }
@@ -510,6 +598,12 @@ footer a {
         padding: 0;
         margin: 0 20px;
         font-size: 1.3rem;
+    }
+
+    header img {
+        width: 900px;
+        height: 30vh;
+        margin: 5px 5px 10px;
     }
 }
 
