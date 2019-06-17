@@ -17,7 +17,7 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color: black;
-    margin-top: 0;
+    margin: 0px 0px 10px;
     text-decoration: none;
 }
 
@@ -163,14 +163,13 @@ footer a {
 #velkommen {
     margin: 0 auto;
     max-width: 1000px;
-    background-color: w;
 }
 
 #velkommen .sectionwrapper {
     /* parent flex */
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin: 0px;
     justify-content: space-between;
 }
 
@@ -193,6 +192,7 @@ footer a {
 #portfolio {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     max-width: 450px;
     background-color: #EFEBE7;
 }
@@ -201,13 +201,13 @@ footer a {
     /* parent flex */
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin: 30px 0px;
     justify-content: space-between;
 }
 
 #portfolio p {
     text-align: center;
-    margin: 50px 0px 30px;
+    margin: 20px 0px 30px;
 }
 
 .col {
@@ -309,7 +309,7 @@ footer a {
     /* parent flex */
     display: flex;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin: 0;
     justify-content: space-between;
 }
 
@@ -460,12 +460,106 @@ footer a {
 }
 
 
+/**** DOKUMENTATION CSS ****/
+
+#dokumentation {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#dokumentation h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#dokumentation .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#dokumentation .om {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#dokumentation .billede1 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#dokumentation .billede2 {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#dokumentation .billede3 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+
+/**** SPIL1 CSS ****/
+
+#spil1 {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#spil1 h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#spil1 .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#spil1 .om {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#spil1 .billede1 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#spil1 .billede2 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#spil1 .billede3 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
 
 /** TABLET MEDIA QUERY **/
 @media only screen and (min-width: 640px) {
     #portfolio {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 30px;
         max-width: 1000px;
         background-color: #EFEBE7;
     }
@@ -474,7 +568,7 @@ footer a {
         /* parent flex */
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin: 30px 0px;
         justify-content: space-between;
     }
 
@@ -512,7 +606,6 @@ footer a {
     }
 
     #portfolio h4 {
-        bottom: vw;
         color: black;
         background-color: transparent;
         font-size: 0.8rem;
