@@ -119,9 +119,6 @@ header li a:hover {
 }
 
 /**** FORSIDE: VELKOMMEN CSS ****/
-img {
-    width: 100%;
-}
 
 #velkommen {
     margin: 0 auto;
@@ -339,6 +336,63 @@ footer a {
 }
 
 
+/**** STILARTSIDE CSS ****/
+
+#stilartside {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#stilartside h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#stilartside h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    margin: 0px 0px 5px;
+    font-weight: bold;
+}
+
+#stilartside a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#stilartside a:hover {
+    color: #3A414A;
+}
+
+#stilartside .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+#stilartside .om {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 20px;
+}
+
+
+#stilartside .billede1 {
+    flex-grow: 2;
+    flex-basis: 400px;
+    padding: 20px;
+}
+
+
+
 /** TABLET MEDIA QUERY **/
 @media only screen and (min-width: 640px) {
     #portfolio {
@@ -405,7 +459,8 @@ footer a {
     header {
         /*        position: absolute;*/
         flex-direction: column;
-        height: 250px;
+        height: 240px;
+        /*        border-bottom: 6px solid #CEBBAD;*/
     }
 
     header li {
@@ -423,7 +478,7 @@ footer a {
 
     header img {
         /*        position: relative;*/
-        width: 100vw;
+        width: 900px;
         height: 30vh;
         margin: 5px 5px 10px;
     }
@@ -444,7 +499,7 @@ footer a {
     }
 
     #menu {
-        top: -120px;
+        top: -50px;
         position: relative;
     }
 }
