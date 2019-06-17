@@ -21,16 +21,46 @@ h1 {
     text-decoration: none;
 }
 
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    margin: 0px 0px 5px;
+    font-weight: bold;
+}
+
 h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
     margin: 10px 0px;
 }
 
+
+h4 {
+    color: black;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 5px;
+    font-style: italic;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3A414A;
+}
+
 
 /**** HEADER ****/
 header {
@@ -95,57 +125,6 @@ header li a:hover {
     color: #CEBBAD;
 }
 
-#splash {
-    width: 100vw;
-    height: 100vh;
-
-    background-image: url(billeder/splash3.png);
-    background-size: cover;
-    background-position: 45% 0%;
-    max-width: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    /*    opacity: 0.8;      HJÆLP!!!      */
-}
-
-#splash_div {
-    padding: 0 0 0 0;
-
-}
-
-/**** FORSIDE: VELKOMMEN CSS ****/
-
-#velkommen {
-    margin: 0 auto;
-    max-width: 1000px;
-    background-color: #EFEBE7;
-}
-
-#velkommen .sectionwrapper {
-    /* parent flex */
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
-}
-
-
-#velkommen .txt {
-    /* child flex */
-    flex-grow: 1;
-    flex-basis: 400px;
-    padding: 50px;
-}
-
-
-#velkommen .image {
-    flex-grow: 1;
-    flex-basis: 200px;
-    padding: 50px;
-}
-
 
 /**** FOOTER ****/
 footer {
@@ -179,6 +158,36 @@ footer a {
     transition: 0.5s;
 }
 
+/**** FORSIDE CSS ****/
+
+#velkommen {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: w;
+}
+
+#velkommen .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#velkommen .txt {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 50px;
+}
+
+#velkommen .image {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 50px;
+}
+
+
 /**** PORTFOLIO CSS ****/
 
 #portfolio {
@@ -209,22 +218,11 @@ footer a {
     height: 40vw;
     margin-left: 20px;
     position: relative;
-
 }
 
 .caption {
     position: absolute;
-    top: 3vw;
-}
-
-#portfolio h4 {
-    bottom: vw;
-    color: black;
-    background-color: transparent;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-    font-style: italic;
+    top: 40vw;
 }
 
 .col:nth-child(1) {
@@ -281,7 +279,6 @@ footer a {
     background-position: 70%0;
 }
 
-
 .col a {
     transition: all 0.5s ease;
     position: absolute;
@@ -316,14 +313,12 @@ footer a {
     justify-content: space-between;
 }
 
-
 #mig .txt {
     /* child flex */
     flex-grow: 1;
     flex-basis: 400px;
     padding: 50px;
 }
-
 
 #mig .image {
     flex-grow: 1;
@@ -344,34 +339,6 @@ footer a {
 #stilartside h1 {
     text-align: center;
     margin: 30px 10px 10px;
-}
-
-#stilartside h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.4rem;
-    margin: 0px 0px 5px;
-    font-weight: bold;
-}
-
-#stilartside h4 {
-    color: black;
-    background-color: transparent;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-    padding: 5px;
-    font-style: italic;
-}
-
-#stilartside a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-#stilartside a:hover {
-    color: #3A414A;
 }
 
 #stilartside .sectionwrapper {
@@ -424,30 +391,6 @@ footer a {
     margin: 30px 10px 10px;
 }
 
-#klippeopgave h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.4rem;
-    margin: 0px 0px 5px;
-    font-weight: bold;
-}
-
-#klippeopgave h4 {
-    color: black;
-    background-color: transparent;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-    padding: 5px;
-    font-style: italic;
-}
-
-#klippeopgave a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
 #klippeopgave .sectionwrapper {
     /* parent flex */
     display: flex;
@@ -464,6 +407,53 @@ footer a {
 }
 
 #klippeopgave .video {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+
+/**** KGB CSS ****/
+
+#kgb {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#kgb h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#kgb .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#kgb .om {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#kgb .video {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#kgb .billede2 {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#kgb .billede3 {
     flex-grow: 1;
     flex-basis: 500px;
     padding: 20px;
@@ -518,7 +508,7 @@ footer a {
 
     .caption {
         position: absolute;
-        top: 18.5vw;
+        top: 20vw;
     }
 
     #portfolio h4 {
@@ -535,10 +525,8 @@ footer a {
 @media only screen and (min-width: 750px) {
 
     header {
-        /*        position: absolute;*/
         flex-direction: column;
         height: 240px;
-        /*        border-bottom: 6px solid #CEBBAD;*/
     }
 
     header li {
@@ -548,7 +536,6 @@ footer a {
     }
 
     header li a {
-        /*        position: relative;*/
         padding: 0;
         font-size: 1.3rem;
         background-color: transparent;
@@ -570,7 +557,6 @@ footer a {
         height: 30vh;
         margin: 5px 5px 10px;
     }
-
 
     #menuknap {
         display: none;
@@ -606,8 +592,3 @@ footer a {
         margin: 5px 5px 10px;
     }
 }
-
-
-/*PROBLEMER:
-        Opacity på splashbilledet
-        Logo og menu skal stå i midten ved 750px*/
