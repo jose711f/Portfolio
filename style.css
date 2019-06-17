@@ -680,6 +680,52 @@ footer a {
     padding: 20px;
 }
 
+/**** LIFE CSS ****/
+
+#life {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#life h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#life .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#life .om {
+    /* child flex */
+    flex-grow: 2;
+    flex-basis: 600px;
+    padding: 20px;
+}
+
+#life .billede1 {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 20px;
+}
+
+#life .billede2 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
+#life .billede3 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 20px;
+}
+
 
 /** TABLET MEDIA QUERY **/
 @media only screen and (min-width: 640px) {
