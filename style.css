@@ -600,7 +600,7 @@ footer a {
     padding: 20px;
 }
 
-/**** SPIL1 CSS ****/
+/**** FRONTER CSS ****/
 
 #fronter {
     margin: 0 auto;
@@ -645,6 +645,41 @@ footer a {
     flex-basis: 500px;
     padding: 20px;
 }
+
+/**** PROTOTYPE CSS ****/
+
+#prototype {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #EFEBE7;
+}
+
+#prototype h1 {
+    text-align: center;
+    margin: 30px 10px 10px;
+}
+
+#prototype .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#prototype .om {
+    /* child flex */
+    flex-grow: 2;
+    flex-basis: 600px;
+    padding: 20px;
+}
+
+#prototype .billede1 {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 20px;
+}
+
 
 /** TABLET MEDIA QUERY **/
 @media only screen and (min-width: 640px) {
