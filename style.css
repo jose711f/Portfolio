@@ -10,6 +10,7 @@ body {
     background-color: #EFEBE7;
     margin: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -78,7 +79,8 @@ header img {
 
 /** NAV **/
 .hidden {
-    transform: translateX(100%)
+    transform: translateX(100%);
+    opacity: 0;
 }
 
 #menuknap {
@@ -148,7 +150,7 @@ footer a {
 }
 
 #footer_2 img {
-    margin-top: 30px;
+    margin: 30px 5px;
     width: 50px;
     transition: all 0.5s ease;
 }
