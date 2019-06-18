@@ -74,7 +74,7 @@ header {
 
 header img {
     width: 390px;
-    margin: 5px;
+    margin: 5px 30px;
 }
 
 /** NAV **/
@@ -88,7 +88,7 @@ header img {
     font-size: 3rem;
     position: absolute;
     right: 10px;
-    top: 17px;
+    top: 13px;
     font-family: 'Josefin Sans', sans-serif;
     padding: 10px;
     line-height: 1;
@@ -149,6 +149,11 @@ footer a {
     color: white;
 }
 
+footer a:hover {
+    color: #CEBBAD;
+    font-weight: 900;
+}
+
 #footer_2 img {
     margin: 30px 5px;
     width: 50px;
@@ -178,14 +183,14 @@ footer a {
 #velkommen .txt {
     /* child flex */
     flex-grow: 1;
-    flex-basis: 400px;
-    padding: 50px;
+    flex-basis: 650px;
+    padding: 50px 20px;
 }
 
 #velkommen .image {
     flex-grow: 1;
-    flex-basis: 200px;
-    padding: 50px;
+    flex-basis: 350px;
+    padding: 50px 20px;
 }
 
 
@@ -317,16 +322,44 @@ footer a {
 
 #mig .txt {
     /* child flex */
-    flex-grow: 1;
-    flex-basis: 400px;
-    padding: 50px;
+    flex-grow: 2;
+    flex-basis: 700px;
+    padding: 50px 20px;
 }
 
 #mig .image {
     flex-grow: 1;
-    flex-basis: 200px;
-    padding: 50px;
-    margin-top: 10px;
+    flex-basis: 300px;
+    padding: 50px 20px;
+}
+
+#mig .erhverv {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 30px 5px 30px 20px;
+}
+
+#mig .uddannelse {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 30px 5px 30px;
+}
+
+#mig .kompetencer {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 30px 20px 30px 5px;
+}
+
+#mig li {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+#mig h2 {
+    padding: 0px 20px;
 }
 
 
